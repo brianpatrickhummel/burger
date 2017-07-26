@@ -1,0 +1,24 @@
+<ol>
+  {{#each burgers}}
+    {{#unless this.devoured}}
+     
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <li> {{this.burger_name}}</li>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <form action="/{{this.id}}?_method=PUT" method="POST">
+            <input type="hidden" name="devour" value="true">
+            <button type="submit">Devour</button>
+          </form>
+        </div>
+      </div>
+        
+        
+      </div>
+    {{/unless}}
+  {{/each}}
+  </ol>
