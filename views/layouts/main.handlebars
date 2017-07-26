@@ -15,20 +15,31 @@
       <!-- Font Awesome CDN-->
     <script src="https://use.fontawesome.com/c38831e163.js"></script>
       <!-- Font Awesome Local (copy entire FA directory into project) -->
-    <link rel="stylesheet" href="../../public/assets/css/fontawesome/css/font-awesome.min.css">
+    {{!-- <link rel="stylesheet" href="../../public/assets/css/fontawesome/css/font-awesome.min.css"> --}}
       <!-- Local CSS link -->
-    <link rel="stylesheet" type="text/css" href="../../public/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   </head>
   <body>
     
+    
+    
     <div class="container">
+      <div class="jumbotron">
+      <div class="container text-center">
+        <img src="/assets/images/burger.png" alt="burger picture" id="burgerImage">
+        <h2>Eat-Da-burger!</h2>
+      </div>
+    </div>
       {{{body}}}
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-4 text-center">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-4 text-center clearfix mainForm">
         <form action="/nod" method="POST" role="form">
-          <textarea name="burger_name" id="" cols="30" rows="5"></textarea>
-          
-        
+        <div>
+           <textarea name="burger_name" id="" cols="30" rows="5"></textarea>
+        </div>
+        <div>
           <button type="submit" class="btn btn-primary">Submit</button>
+        </div> 
+          
         </form>
       </div>
 

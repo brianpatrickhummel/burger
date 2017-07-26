@@ -1,0 +1,40 @@
+ * {
+   border: 1px solid red !important; 
+} 
+
+.mainForm {
+  overflow: scroll;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    padding: 10px;
+}
+
+#burgerImage {
+  width: 450px;
+}
+
+ul {
+  list-style-type:none;
+}
+
+li{
+  color: white;
+}
+
+
+.center{
+  text-align: center; 
+  list-style-position:inside;
+}
+
+.well {
+  background-color:rgba(1,1,1,0.8);
+  margin-top: 20px;
+  margin-bottom: 7px;
+  padding: 10px;
+}
