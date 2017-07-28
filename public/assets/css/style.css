@@ -1,6 +1,52 @@
- * {
+ /* * {
    border: 1px solid red !important; 
-} 
+}  */
+
+/* =================FONTS================= */
+
+@font-face {
+    font-family: 'DecoTech TL';
+    src: url('/assets/fonts/DecoTech\ TL.ttf');
+}
+
+@font-face {
+    font-family: 'Decotech';
+    src: url('/assets/fonts/DecoTech.ttf');
+}
+
+@font-face {
+    font-family: 'Duke Shadow';
+    src: url('/assets/fonts/Duke\ Shadow.otf');
+}
+
+@font-face {
+    font-family: 'Duke';
+    src: url('/assets/fonts/Duke.otf');
+}
+
+@font-face {
+    font-family: 'GatsbyFLF-Bold';
+    src: url('/assets/fonts/GatsbyFLF-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'GatsbyFLF';
+    src: url('/assets/fonts/GatsbyFLF.ttf');
+}
+
+@font-face {
+    font-family: 'LongCoolWoman';
+    src: url('/assets/fonts/LongCoolWoman.ttf');
+}
+
+@font-face {
+    font-family: 'ValenciaHairlineOblique';
+    src: url('/assets/fonts/ValenciaHairlineOblique.otf');
+}
+
+
+/* ======================================= */
+
 
 .mainForm {
   overflow: scroll;
@@ -14,8 +60,26 @@
     padding: 10px;
 }
 
+#mainHeader {
+  font-family: 'ValenciaHairlineOblique';
+  letter-spacing: 20px;
+  font-size: 108px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: .8;
+}
+
+.headerCol {
+  padding: 0px;
+}
+
 #burgerImage {
-  width: 450px;
+  width: 50px;
+  display: block;
+  max-width: 100%;
+  min-width: 20px;
+  height: auto;
+  margin: 0 auto;
 }
 
 ul {
@@ -25,7 +89,6 @@ ul {
 li{
   color: white;
 }
-
 
 .center{
   text-align: center; 
@@ -37,4 +100,46 @@ li{
   margin-top: 20px;
   margin-bottom: 7px;
   padding: 10px;
+}
+
+#devouredId.well {
+  margin-top: 8px !important;
+  background-color:rgba(1,1,1,0.6);
+}
+
+#devourButton {
+  color: white;
+  background-color: rgba(1,1,1,0.9);
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 10px;
+  font-family: 'GatsbyFLF';
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.mainForm {
+  margin-top: 20px;
+}
+
+li {
+  font-family: 'GatsbyFLF';
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+
+@media(max-width: 991px) {
+  #mainHeader {
+    letter-spacing: 10px;
+    font-size: 88px;
+  }
+}
+
+
+@media(max-width: 639px) {
+  #mainHeader {
+    letter-spacing: 10px;
+    font-size: 68px;
+  }
 }

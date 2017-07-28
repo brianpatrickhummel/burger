@@ -10,12 +10,6 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
       <!-- Bootstrap compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <!-- Animate.css -->
-    {{!-- <link rel="stylesheet" href="../../public/assets/css/animate.css"> --}}
-      <!-- Font Awesome CDN-->
-    <script src="https://use.fontawesome.com/c38831e163.js"></script>
-      <!-- Font Awesome Local (copy entire FA directory into project) -->
-    {{!-- <link rel="stylesheet" href="../../public/assets/css/fontawesome/css/font-awesome.min.css"> --}}
       <!-- Local CSS link -->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   </head>
@@ -25,19 +19,28 @@
     
     <div class="container">
       <div class="jumbotron">
-      <div class="container text-center">
-        <img src="/assets/images/burger.png" alt="burger picture" id="burgerImage">
-        <h2>Eat-Da-burger!</h2>
+      <div class="container">
+
+        
+        <div class="row">
+          <h2 class="text-center" id="mainHeader">EAT-DA-BURGER</h2> 
+        </div>
+        <div class="row">
+          <img src="/assets/images/burger.png" alt="burger picture" class="img-fluid" id="burgerImage">
+        </div>
+        
+        
       </div>
     </div>
       {{{body}}}
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-4 text-center clearfix mainForm">
-        <form action="/nod" method="POST" role="form">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-offset-3 text-center clearfix mainForm">
+        <form action="/" method="POST" role="form">
+        <h5 class="text-center">Enter the name of a new burger</h5>
         <div>
-           <textarea name="burger_name" id="" cols="30" rows="5"></textarea>
+           <textarea name="burger_name" id="" cols="30" rows="1"></textarea>
         </div>
         <div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn" id="devourButton">Submit</button>
         </div> 
           
         </form>
@@ -46,3 +49,5 @@
     </div>
   </body>
 </html>
+
+

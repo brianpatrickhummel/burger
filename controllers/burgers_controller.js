@@ -17,5 +17,14 @@ router.post("/", function(req,res){
   });
 });
 
+router.put("/:id", function(req, res){
+  var devoured = req.body.devour;
+  console.log('devoured = ' + devoured);
+  var condition = "id = " + req.params.id;
+  burger.update("devoured", devoured, condition, function() {
+    res.redirect("/");
+  });
+});
+
 
 module.exports = router;
