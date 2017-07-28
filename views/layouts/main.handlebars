@@ -19,25 +19,21 @@
     
     <div class="container">
       <div class="jumbotron">
-      <div class="container">
-
-        
-        <div class="row">
-          <h2 class="text-center" id="mainHeader">EAT-DA-BURGER</h2> 
+        <div class="container">
+          <div class="row">
+            <h2 class="text-center" id="mainHeader">EAT-DA-BURGER</h2> 
+          </div>
+          <div class="row">
+            <img src="/assets/images/burger.png" alt="burger picture" class="img-fluid" id="burgerImage">
+          </div>  
         </div>
-        <div class="row">
-          <img src="/assets/images/burger.png" alt="burger picture" class="img-fluid" id="burgerImage">
-        </div>
-        
-        
       </div>
-    </div>
       {{{body}}}
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-offset-3 text-center clearfix mainForm">
         <form action="/" method="POST" role="form">
-        <h5 class="text-center">Enter the name of a new burger</h5>
+        <h5 class="text-center">ADD A NEW BURGER NAME</h5>
         <div>
-           <textarea name="burger_name" id="" cols="30" rows="1"></textarea>
+           <textarea name="burger_name" id="burgerText" cols="30" rows="1"></textarea>
         </div>
         <div>
           <button type="submit" class="btn" id="devourButton">Submit</button>
